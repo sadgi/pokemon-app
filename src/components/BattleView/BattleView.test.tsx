@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import BattleView from "./BattleView";
-import { PokemonProvider, usePokemon } from "../../context/PokemonContext"; // Import the provider
+import { PokemonProvider, usePokemon } from "../../context/PokemonContext";
 
 jest.mock("../../context/PokemonContext", () => ({
   ...jest.requireActual("../../context/PokemonContext"),

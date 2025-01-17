@@ -18,22 +18,13 @@ const BattleView: React.FC = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
       //name for pokemon to extract their details through API name is choosen randomly from this list for battle
-      const pokemonList = [
-        "bulbasaur",
-        "charmander",
-        "squirtle",
-        "pikachu",
-        "jigglypuff",
-        "meowth",
-        "psyduck",
-        "machop",
-        "magikarp",
-        "pidgey",
-      ];
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
+      const data = await response.json();
+      const pokemonList = data.results.map((pokemon:{name:string,  url: string}) => pokemon.name);
 
       const getRandomPokemonName = (excludeName?: string) => {
         const filteredList = excludeName
-          ? pokemonList.filter((name) => name !== excludeName)
+          ? pokemonList.filter((name :string) => name !== excludeName)
           : pokemonList;
         return filteredList[Math.floor(Math.random() * filteredList.length)];
       };
