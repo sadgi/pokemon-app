@@ -1,22 +1,22 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with Create React App and is a fun web application where you can simulate a Pokemon battle. The app fetches Pokemon data from PokeAPI and simulates a battle between two Pokemon, comparing their randomly selected moves and displaying the outcome.The application is thoroughly tested using unit tests to ensure each component functions correctly
+This project bootstrapped with Create React App and is a fun web application where you can simulate a Pokemon battle. The app fetches Pokemon data from PokeAPI and simulates a battle between two Pokemon, comparing their randomly selected moves and displaying the outcome.The application is thoroughly tested using unit tests to ensure each component functions correctly
 
 # Features
 
-Pokemon Selection: Choose two Pokemon to battle from the PokeAPI.
-Random Move Generation: Pokemon will use a random move with an associated power, which will be compared during the battle.
-Battle Outcome: The battle outcome is determined by comparing the power of both Pokemon's moves.
-Battle Log: A real-time log of the battle's progression and results.
-Responsive Design: Optimized for different screen sizes.
+Pokemon Selection: Choose two Pokemon to battle from the PokeAPI.\
+Random Move Generation: Pokemon will use a random move with an associated power, which will be compared during the battle.\
+Battle Outcome: The battle outcome is determined by comparing the power of both Pokemon's moves.\
+Battle Log: A real-time log of the battle's progression and results.\
+Responsive Design: Optimized for different screen sizes.\
 
 # Technologies Used
 
-React: For building the user interface.
-React Context API: For managing shared state in the app.
-TypeScript: For providing type safety.
-PokeAPI: For fetching Pokemon data and moves.
-Jest and React Testing Library: For unit and integration testing.
+React: For building the user interface.\
+React Context API: For managing shared state in the app.\
+TypeScript: For providing type safety.\
+PokeAPI: For fetching Pokemon data and moves.\
+Jest and React Testing Library: For unit and integration testing.\
 
 ## Available Scripts
 
