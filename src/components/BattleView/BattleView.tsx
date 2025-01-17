@@ -17,11 +17,11 @@ const BattleView: React.FC = () => {
 
   useEffect(() => {
     const fetchPokemon = async () => {
-      //name for pokemon to extract their details through API name is choosen randomly from this list for battle
       const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
       const data = await response.json();
       const pokemonList = data.results.map((pokemon:{name:string,  url: string}) => pokemon.name);
 
+      //logic so that no same name pokemons are choosen for battle
       const getRandomPokemonName = (excludeName?: string) => {
         const filteredList = excludeName
           ? pokemonList.filter((name :string) => name !== excludeName)
